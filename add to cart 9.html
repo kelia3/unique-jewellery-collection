@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <link rel="stylesheet" href="add-to-cart.css"> <!-- Renamed CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .product-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+            text-align: center; /* Center the content */
+        }
+
+        .product-image {
+            max-width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Rounded corners for the image */
+        }
+
+        h5 {
+            color: #333;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        select:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        .button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <button> <a href="home.html">Home</a></button>
+</head>
+<body>
+    <div class="product-container">
+        <img src="C:\Users\user\Pictures\images\8.png" alt="Product Image" class="product-image"> <!-- Replace with actual product image URL -->
+        <form action="shooping.html" method="post"> <!-- Changed to HTTPS -->
+            <h5>Product Options</h5>
+            
+            <p>
+                <label for="color">Color:</label>
+                <select name="color" id="color" required>
+                    <option value="" disabled selected>Select a color</option>
+                    <option value="gold">gold</option>
+                    <option value="silver">siver</option>
+                </select>
+            </p>
+            
+            <p>
+                <label for="size">Size:</label>
+                <select name="size" id="size" required>
+                    <option value="" disabled selected>Select a size</option>
+                    <option value="small">Small</option>
+                    <option value="large">Large</option>
+                </select>
+            </p>
+            
+            <input type="submit" class="button" value="Add to Shopping Cart" />
+        </form>
+    </div>
+</body>
+</html>
